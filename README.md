@@ -1,9 +1,23 @@
 # racket-practice
 
 # Setup
+## Environment
 Downlad and install racket.
 
 [Download Racket](http://racket-lang.org/download/)
+
+## Editor
+Install [emacs](https://www.gnu.org/software/emacs/download.html).
+
+Install `racket-mode` and `paredit` to emacs.
+
+Add the following lines for `emacs/init.el` to activate paredit for racket.
+```
+(require 'paredit)
+(add-hook 'racket-mode-hook 'paredit-mode)
+```
+
+On `racket-mode`, you can execute your code on repl by typing `Ctrl-c` twice.
 
 # Programs
 ## first-program
