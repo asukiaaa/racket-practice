@@ -19,6 +19,25 @@ racket first-server.rkt
 
 You can access http://localhost:8001/first-page
 
+## first-gui
+```
+racket first-gui.rkt
+```
+
+Run with using standanlone file.
+```
+raco exe --gui first-gui.rkt
+./first-gui
+```
+
+## second, third gui
+```
+racket second-gui.rkt
+racket thirg-gui.rkt
+```
+
 # References
 - [The Racket Guide](https://docs.racket-lang.org/guide/index.html)
 - [Simple Web Applications in Racket](https://www.monolune.com/simple-web-applications-in-racket/)
+- [The Racket Graphical Interface Toolkit](https://docs.racket-lang.org/gui/)
+- [2 raco exe: Creating Stand-Alone Executables](https://docs.racket-lang.org/raco/exe.html)
