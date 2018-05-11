@@ -9,12 +9,22 @@ Downlad and install racket.
 ## Editor
 Install [emacs](https://www.gnu.org/software/emacs/download.html).
 
-Install `racket-mode` and `paredit` to emacs.
+Add the line as `~/.emacs.d/init.el` to load melpa.
 
-Add the following lines for `emacs/init.el` to activate paredit for racket.
+```
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(package-initialize)
+```
+
+Start emacs and type `M(Esc or Alt)-x` + `list-package` then install `racket-mode` and `paredit`.
+
+Add the following lines for `~/.emacs.d/init.el` to activate paredit for racket.
+
 ```
 (require 'paredit)
 (add-hook 'racket-mode-hook 'paredit-mode)
+(add-hook 'racket-repl-mode-hook 'paredit-mode)
 ```
 
 On `racket-mode`, you can execute your code on repl by typing `Ctrl-c` twice.
