@@ -37,7 +37,7 @@ On `racket-mode`, you can execute your code on repl by typing `Ctrl-c` twice.
 
 ## first-server
 ```
-raco pkg install web-server
+raco pkg install --auto web-server
 racket first-server.rkt
 ```
 
@@ -60,8 +60,17 @@ racket second-gui.rkt
 racket thirg-gui.rkt
 ```
 
+## serial monitor
+```
+sudo apt install libserialport-dev
+raco pkg install --auto libserialport
+racket serial-monitor.rkt
+```
+
 # References
 - [The Racket Guide](https://docs.racket-lang.org/guide/index.html)
 - [Simple Web Applications in Racket](https://www.monolune.com/simple-web-applications-in-racket/)
 - [The Racket Graphical Interface Toolkit](https://docs.racket-lang.org/gui/)
 - [2 raco exe: Creating Stand-Alone Executables](https://docs.racket-lang.org/raco/exe.html)
+- [read-bytes-avail!*](https://docs.racket-lang.org/reference/Byte_and_String_Input.html#%28def._%28%28quote._~23~25kernel%29._read-bytes-avail%21%2A%29%29)
+- [Interface and Application Programming](http://fab.cba.mit.edu/classes/863.17/Harvard/people/julia-ebert/2017/11/22/interface-application-programming.html)
