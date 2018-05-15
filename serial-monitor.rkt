@@ -10,6 +10,7 @@
 
 (define (read-port port)
   (let loop ()
+    (display "") ; flash output
     (print "loop")
     (define read-result (read-bytes-avail!* read-buffer port))
     (print read-result)
