@@ -67,6 +67,11 @@ raco pkg install --auto libserialport
 racket serial-monitor.rkt
 ```
 
+## first contract
+```
+racket first-contract.rkt
+```
+
 # References
 - [The Racket Guide](https://docs.racket-lang.org/guide/index.html)
 - [Simple Web Applications in Racket](https://www.monolune.com/simple-web-applications-in-racket/)
